@@ -1,0 +1,190 @@
+/*
+background: #2c3e50; 
+background: -webkit-linear-gradient(to right, #2c3e50, #3498db); 
+background: linear-gradient(to right, #2c3e50, #3498db);
+
+colores
+#4f6d7a
+#c0d6df
+#dbe9ee 
+#4a6fa5
+#166088
+
+<i class="fas fa-comment-dots"></i>
+<i class="far fa-comment-dots"></i>
+*/
+html{
+	/*font-family: 'Dancing Script', cursive;*/
+}
+
+.fa-comment-dots {
+	color: green;
+}
+
+
+.container {
+/* 	background: #2c3e50; 
+	background: -webkit-linear-gradient(to right, #2c3e50, #3498db); 
+	background: linear-gradient(to right, #2c3e50, #3498db); */
+
+	background-image: url("../../images/fondo.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+  	background-size: cover;
+
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	background-color:  rgba(192, 214, 223, 0.8);
+	height: 85vh;
+	width: 85vw;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	position: relative;
+	padding: 0.5em;
+	border-radius: 50px;
+	overflow: auto;
+	
+}
+
+.table {
+	width: 100%;
+	border-spacing: 0;	
+}
+
+.table th, 
+.table td{
+	padding: 1em;
+	text-align: left; 
+}
+
+.table tr:nth-child(even){
+	background-color: #4a6fa5;
+}
+
+td:nth-of-type(1){
+	font-size: 1.5em;
+	color: #4f6d7a;
+	
+}
+
+th{
+	display: none;
+}
+
+td{
+	display: block;
+}
+
+
+
+.center{
+	text-align: center;	
+}
+
+.underline{
+	border-bottom: solid 5px #4a6fa5;
+	padding-bottom: 15px;
+}
+
+.position{
+	background-color: #4a6fa5;
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 4px;
+}
+
+
+
+.actions {
+	position: sticky;
+	top:  1em;
+	left: : 1em;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.close{
+	height: 40px;
+	width: 40px;
+	background-color: #4a6fa5;
+	color: white;
+	border-radius: 50px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.title{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+.item-image{
+		display: none;
+}
+
+
+
+iframe{
+	width: 70vw;
+
+}
+
+
+
+
+@media(min-width: 600px){
+	th{
+		display: table-cell;
+	}
+	td{
+		display: table-cell;
+	}
+
+	td:nth-of-type(1){
+		font-size: 1em;
+		color: black;
+	}
+
+	.content{
+		width:70vw;
+		height: 80vh; 
+		padding: 1.8em;
+	}
+
+	.item-image{
+		display: inline-block;
+	}
+
+	iframe{
+		height: : 420px;
+		width: 320px;
+	}
+	.inline{
+		display: inline-block;
+	} 
+
+	.actions {
+	 /*absoluto al padre o contenedor el conetendor tiene que se relativo*/
+	position: absolute;
+	top:  1em;
+	right: 1em;
+	}
+
+	.item-title{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	}
+}
